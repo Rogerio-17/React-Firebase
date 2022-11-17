@@ -1,0 +1,10 @@
+body {
+  background: rgb(212, 212, 212);
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
