@@ -2,9 +2,104 @@ body {
   background: rgb(212, 212, 212);
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   width: 600px;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.container input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.container .button {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.container .button button {
+  margin: 0px 30px;
+  padding: 8px 30px;
+  border-radius: 8px;
+  background: rgb(245, 65, 65);
+  color: rgb(240, 240, 240);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container .button button:hover {
+  background: rgb(245, 100, 100);
+  transform: scale(1.03);
+  color: rgb(37, 35, 35);
+}
+
+.posts-card {
+  margin-top: 20px;
+  padding: 12px;
+  background: rgb(179, 175, 175);
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.posts-card .itens {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.posts-card .button-lateral {
+  margin-top: -40px;
+  float: right;
+}
+
+.posts-card .button-lateral button {
+  padding: 8px 30px;
+  border-radius: 8px;
+  background: rgb(245, 65, 65);
+  color: rgb(240, 240, 240);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container .button-lateral button:hover {
+  background: rgb(245, 100, 100);
+  transform: scale(1.03);
+  color: rgb(37, 35, 35);
+}
+
+button.button-login {
+  padding: 8px 30px;
+  border-radius: 8px;
+  background: rgb(245, 65, 65);
+  color: rgb(240, 240, 240);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+button.button-login:hover {
+  background: rgb(245, 100, 100);
+  transform: scale(1.03);
+  color: rgb(37, 35, 35);
+}
+
+.clear {
+  clear: both;
 }
