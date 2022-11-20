@@ -16,6 +16,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
 
 import Header from "./components/header";
@@ -54,6 +55,23 @@ function App() {
       });
     }
     loadPosts();
+  }, []);
+
+  useEffect(() => {
+    async function checkLogin() {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          setUser(true);
+          setDetail({
+            email: user.email,
+          });
+        } else {
+          setUser(false);
+          setDetail({});
+        }
+      });
+    }
+    checkLogin();
   }, []);
 
   async function handleAdd() {
